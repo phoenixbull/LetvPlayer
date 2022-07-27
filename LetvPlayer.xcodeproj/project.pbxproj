@@ -1,0 +1,1917 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 53;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C9657E49B101649EF8317F9 /* Pods_LetvPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC9718020EE128182C3B06E4 /* Pods_LetvPlayer.framework */; };
+		A494446E4B58ED980CA1ED1F /* Pods_LetvPlayerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D67B6BE9CD19C7780AD474 /* Pods_LetvPlayerDemo.framework */; };
+		E418FC10288902B200A3721A /* VideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E418FC0F288902B200A3721A /* VideoPlayerView.m */; };
+		E418FC12288902C800A3721A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E418FC11288902C800A3721A /* AVFoundation.framework */; };
+		E418FC14288902D500A3721A /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E418FC13288902D500A3721A /* AVKit.framework */; };
+		E47F82EA28816A0C00989B62 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E47F82E928816A0C00989B62 /* AppDelegate.m */; };
+		E47F82ED28816A0C00989B62 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E47F82EC28816A0C00989B62 /* SceneDelegate.m */; };
+		E47F82F028816A0C00989B62 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E47F82EF28816A0C00989B62 /* ViewController.m */; };
+		E47F82F328816A0C00989B62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E47F82F128816A0C00989B62 /* Main.storyboard */; };
+		E47F82F528816A0D00989B62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E47F82F428816A0D00989B62 /* Assets.xcassets */; };
+		E47F82F828816A0D00989B62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E47F82F628816A0D00989B62 /* LaunchScreen.storyboard */; };
+		E47F82FB28816A0D00989B62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E47F82FA28816A0D00989B62 /* main.m */; };
+		E47F82FF28816ABE00989B62 /* LetvPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D41EBF288156DF00518908 /* LetvPlayer.framework */; };
+		E47F830028816ABE00989B62 /* LetvPlayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E4D41EBF288156DF00518908 /* LetvPlayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E47F8304288170D000989B62 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D4202528815AF500518908 /* libcrypto.a */; };
+		E47F8305288170D300989B62 /* libglog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D4202628815AF500518908 /* libglog.a */; };
+		E47F8306288170D500989B62 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D4202728815AF500518908 /* libssl.a */; };
+		E47F8308288170DA00989B62 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D4202928815AF500518908 /* libcurl.a */; };
+		E47F8309288170DD00989B62 /* libboost.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D4202A28815AF500518908 /* libboost.a */; };
+		E47F830A288170E000989B62 /* libcde-sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D4202B28815AF500518908 /* libcde-sdk.a */; };
+		E47F830C288508AC00989B62 /* LetvPlayerHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = E47F830B288508AC00989B62 /* LetvPlayerHeader.h */; };
+		E47F830E28854A4100989B62 /* libzlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E47F830D28854A4100989B62 /* libzlib.a */; };
+		E47F837328856BA600989B62 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E47F837228856BA600989B62 /* libc++.tbd */; };
+		E4D41EC4288156DF00518908 /* LetvPlayer.docc in Sources */ = {isa = PBXBuildFile; fileRef = E4D41EC3288156DF00518908 /* LetvPlayer.docc */; };
+		E4D41ECA288156DF00518908 /* LetvPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D41EBF288156DF00518908 /* LetvPlayer.framework */; };
+		E4D41ECF288156DF00518908 /* LetvPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41ECE288156DF00518908 /* LetvPlayerTests.m */; };
+		E4D41ED0288156DF00518908 /* LetvPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41EC2288156DF00518908 /* LetvPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D41F9D28815AB600518908 /* AFHTTPSessionManager+Rx.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41EDB28815AB600518908 /* AFHTTPSessionManager+Rx.h */; };
+		E4D41F9E28815AB600518908 /* AFHTTPSessionManager+Rx.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41EDC28815AB600518908 /* AFHTTPSessionManager+Rx.m */; };
+		E4D41F9F28815AB600518908 /* RxAFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41EDD28815AB600518908 /* RxAFNetworking.h */; };
+		E4D41FA028815AB600518908 /* NSObject+LetvContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41EE028815AB600518908 /* NSObject+LetvContainer.h */; };
+		E4D41FA128815AB600518908 /* LetvMobileContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41EE128815AB600518908 /* LetvMobileContainer.m */; };
+		E4D41FA228815AB600518908 /* NSObject+LetvContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41EE228815AB600518908 /* NSObject+LetvContainer.m */; };
+		E4D41FA328815AB600518908 /* LetvMobileContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41EE328815AB600518908 /* LetvMobileContainer.h */; };
+		E4D41FA428815AB600518908 /* LetvMobileDeployment.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41EE528815AB600518908 /* LetvMobileDeployment.h */; };
+		E4D41FA528815AB600518908 /* LetvSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41EE728815AB600518908 /* LetvSingleton.h */; };
+		E4D41FA628815AB600518908 /* NSString+LetvMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41EEA28815AB600518908 /* NSString+LetvMD5.m */; };
+		E4D41FA728815AB600518908 /* NSString+LetvHttpExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41EEB28815AB600518908 /* NSString+LetvHttpExtensions.h */; };
+		E4D41FA828815AB600518908 /* NSString+LetvHttpExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41EEC28815AB600518908 /* NSString+LetvHttpExtensions.m */; };
+		E4D41FA928815AB600518908 /* NSString+LetvMD5.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41EED28815AB600518908 /* NSString+LetvMD5.h */; };
+		E4D41FAA28815AB600518908 /* NSData+LetvMD5.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41EEF28815AB600518908 /* NSData+LetvMD5.h */; };
+		E4D41FAB28815AB600518908 /* NSData+LetvMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41EF028815AB600518908 /* NSData+LetvMD5.m */; };
+		E4D41FAC28815AB600518908 /* NSArray+LetvFP.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41EF228815AB600518908 /* NSArray+LetvFP.m */; };
+		E4D41FAD28815AB600518908 /* NSArray+LetvFP.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41EF328815AB600518908 /* NSArray+LetvFP.h */; };
+		E4D41FAE28815AB600518908 /* NSError+Letv.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41EF528815AB600518908 /* NSError+Letv.h */; };
+		E4D41FAF28815AB600518908 /* NSError+Letv.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41EF628815AB600518908 /* NSError+Letv.m */; };
+		E4D41FB028815AB600518908 /* RACSignal+LetvMapError.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41EF828815AB600518908 /* RACSignal+LetvMapError.h */; };
+		E4D41FB128815AB600518908 /* RACSignal+LetvMapError.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41EF928815AB600518908 /* RACSignal+LetvMapError.m */; };
+		E4D41FB228815AB600518908 /* LetvMobileCancelTrait.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41EFB28815AB600518908 /* LetvMobileCancelTrait.h */; };
+		E4D41FB328815AB600518908 /* LetvMobileCore.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41EFC28815AB600518908 /* LetvMobileCore.h */; };
+		E4D41FB428815AB600518908 /* AFHTTPSessionManager+Letv.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41EFF28815AB600518908 /* AFHTTPSessionManager+Letv.h */; };
+		E4D41FB528815AB600518908 /* LetvHttpRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F0028815AB600518908 /* LetvHttpRequestSerializer.m */; };
+		E4D41FB628815AB600518908 /* LetvHttpSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F0128815AB600518908 /* LetvHttpSessionManager.m */; };
+		E4D41FB728815AB600518908 /* LetvHttpRequestSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F0228815AB600518908 /* LetvHttpRequestSerializer.h */; };
+		E4D41FB828815AB600518908 /* AFHTTPSessionManager+Letv.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F0328815AB600518908 /* AFHTTPSessionManager+Letv.m */; };
+		E4D41FB928815AB600518908 /* LetvHttpSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F0428815AB600518908 /* LetvHttpSessionManager.h */; };
+		E4D41FBA28815AB600518908 /* LetvMobileNetworkingContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F0628815AB600518908 /* LetvMobileNetworkingContainer.m */; };
+		E4D41FBB28815AB600518908 /* LetvMobileNetworkingContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F0728815AB600518908 /* LetvMobileNetworkingContainer.h */; };
+		E4D41FBC28815AB600518908 /* LetvMobileNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F0828815AB600518908 /* LetvMobileNetworking.h */; };
+		E4D41FBD28815AB600518908 /* LetvMobileReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F0A28815AB600518908 /* LetvMobileReachability.m */; };
+		E4D41FBE28815AB600518908 /* LetvMobileReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F0B28815AB600518908 /* LetvMobileReachability.h */; };
+		E4D41FBF28815AB600518908 /* RACSignal+LetvMapModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F0D28815AB600518908 /* RACSignal+LetvMapModel.m */; };
+		E4D41FC028815AB600518908 /* RACSignal+LetvMapModel.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F0E28815AB600518908 /* RACSignal+LetvMapModel.h */; };
+		E4D41FC128815AB600518908 /* LetvMobileHTTPClientTrait.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F1128815AB600518908 /* LetvMobileHTTPClientTrait.h */; };
+		E4D41FC228815AB600518908 /* LetvMobileHTTPDefaultGETParametersTrait.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F1328815AB600518908 /* LetvMobileHTTPDefaultGETParametersTrait.h */; };
+		E4D41FC328815AB600518908 /* LetvHttpServerUniversalParametersHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F1528815AB600518908 /* LetvHttpServerUniversalParametersHelper.m */; };
+		E4D41FC428815AB600518908 /* LetvHttpServerAPISignatureHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F1628815AB600518908 /* LetvHttpServerAPISignatureHelper.h */; };
+		E4D41FC528815AB600518908 /* LetvHttpServerUniversalParametersHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F1728815AB600518908 /* LetvHttpServerUniversalParametersHelper.h */; };
+		E4D41FC628815AB600518908 /* LetvHttpServerAPISignatureHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F1828815AB600518908 /* LetvHttpServerAPISignatureHelper.m */; };
+		E4D41FC728815AB600518908 /* LetvMobileNetworkingFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F1A28815AB600518908 /* LetvMobileNetworkingFactory.h */; };
+		E4D41FC828815AB600518908 /* LetvMobileNetworkingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F1B28815AB600518908 /* LetvMobileNetworkingFactory.m */; };
+		E4D41FC928815AB600518908 /* LetvMobileVideoMergeClient.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F1E28815AB600518908 /* LetvMobileVideoMergeClient.h */; };
+		E4D41FCA28815AB600518908 /* LetvMobilePlayAPIModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F1F28815AB600518908 /* LetvMobilePlayAPIModel.m */; };
+		E4D41FCB28815AB600518908 /* LetvMobileNetworkAPIClient.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F2028815AB600518908 /* LetvMobileNetworkAPIClient.h */; };
+		E4D41FCC28815AB600518908 /* LetvMobileVideoMergeClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F2128815AB600518908 /* LetvMobileVideoMergeClient.m */; };
+		E4D41FCD28815AB600518908 /* LetvMobilePlayAPIModel.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F2228815AB600518908 /* LetvMobilePlayAPIModel.h */; };
+		E4D41FCE28815AB600518908 /* LetvMobileNetworkAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F2328815AB600518908 /* LetvMobileNetworkAPIClient.m */; };
+		E4D41FCF28815AB600518908 /* LetvMobileMediaLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F2528815AB600518908 /* LetvMobileMediaLoader.h */; };
+		E4D41FD028815AB600518908 /* LetvMobileMediaLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F2628815AB600518908 /* LetvMobileMediaLoader.m */; };
+		E4D41FD128815AB600518908 /* IMobilePlayerCore.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F2828815AB600518908 /* IMobilePlayerCore.h */; };
+		E4D41FD228815AB600518908 /* LetvMobileLinkShellGlue.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F2B28815AB600518908 /* LetvMobileLinkShellGlue.h */; };
+		E4D41FD328815AB600518908 /* LetvMobileLinkShellGlue.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F2C28815AB600518908 /* LetvMobileLinkShellGlue.m */; };
+		E4D41FD428815AB600518908 /* LetvMobileCDEClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F2E28815AB600518908 /* LetvMobileCDEClient.m */; };
+		E4D41FD528815AB600518908 /* LetvMobileCDEGlue.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F2F28815AB600518908 /* LetvMobileCDEGlue.h */; };
+		E4D41FD628815AB600518908 /* LetvMobileCDEClient.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F3028815AB600518908 /* LetvMobileCDEClient.h */; };
+		E4D41FD728815AB600518908 /* LetvMobileCDEGlue.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F3128815AB600518908 /* LetvMobileCDEGlue.m */; };
+		E4D41FD828815AB600518908 /* LetvMobileAdvertiseGlue.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F3328815AB600518908 /* LetvMobileAdvertiseGlue.h */; };
+		E4D41FD928815AB600518908 /* LetvMobileAdvertiseGlue.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F3428815AB600518908 /* LetvMobileAdvertiseGlue.m */; };
+		E4D41FDA28815AB600518908 /* LetvMobileCDNGlue.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F3628815AB600518908 /* LetvMobileCDNGlue.m */; };
+		E4D41FDB28815AB600518908 /* LetvMobileCDNGlue.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F3728815AB600518908 /* LetvMobileCDNGlue.h */; };
+		E4D41FDC28815AB600518908 /* LetvMobileMediaLoaderContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F3928815AB600518908 /* LetvMobileMediaLoaderContainer.h */; };
+		E4D41FDD28815AB600518908 /* LetvMobileMediaLoaderContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F3A28815AB600518908 /* LetvMobileMediaLoaderContainer.m */; };
+		E4D41FDE28815AB600518908 /* LetvMobileMediaLoadModuleTrait.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F3D28815AB600518908 /* LetvMobileMediaLoadModuleTrait.h */; };
+		E4D41FDF28815AB600518908 /* LetvMobileMediaRequestTrait.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F3F28815AB600518908 /* LetvMobileMediaRequestTrait.h */; };
+		E4D41FE028815AB600518908 /* LetvMobileMediaPlayTrait.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F4028815AB600518908 /* LetvMobileMediaPlayTrait.h */; };
+		E4D41FE128815AB600518908 /* LetvMobileMediaLoadTrait.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F4128815AB600518908 /* LetvMobileMediaLoadTrait.h */; };
+		E4D41FE228815AB600518908 /* LetvMobileCDEModuleTrait.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F4328815AB600518908 /* LetvMobileCDEModuleTrait.h */; };
+		E4D41FE328815AB600518908 /* LetvMobileAuthModuleTrait.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F4528815AB600518908 /* LetvMobileAuthModuleTrait.h */; };
+		E4D41FE428815AB600518908 /* LetvMobilePlayRequestModuleTrait.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F4728815AB600518908 /* LetvMobilePlayRequestModuleTrait.h */; };
+		E4D41FE528815AB600518908 /* LetvMobileAdvertiseModuleTrait.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F4928815AB600518908 /* LetvMobileAdvertiseModuleTrait.h */; };
+		E4D41FE628815AB600518908 /* LetvMobileLinkShellModuleTrait.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F4B28815AB600518908 /* LetvMobileLinkShellModuleTrait.h */; };
+		E4D41FE728815AB600518908 /* LetvMobileCDNModuleTrait.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F4D28815AB600518908 /* LetvMobileCDNModuleTrait.h */; };
+		E4D41FE828815AB600518908 /* LetvMobileMediaLoaderDefaultParametersTrait.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F4F28815AB600518908 /* LetvMobileMediaLoaderDefaultParametersTrait.h */; };
+		E4D41FE928815AB600518908 /* LetvMobilePlayerKitFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F5128815AB600518908 /* LetvMobilePlayerKitFactory.m */; };
+		E4D41FEA28815AB600518908 /* LetvMobilePlayerKitFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F5228815AB600518908 /* LetvMobilePlayerKitFactory.h */; };
+		E4D41FEB28815AB600518908 /* LetvMobileAuthService.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F5528815AB600518908 /* LetvMobileAuthService.h */; };
+		E4D41FEC28815AB600518908 /* LetvMobileAuthService.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F5628815AB600518908 /* LetvMobileAuthService.m */; };
+		E4D41FED28815AB600518908 /* LetvMobileCDEService.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F5828815AB600518908 /* LetvMobileCDEService.h */; };
+		E4D41FEE28815AB600518908 /* LetvMobileCDEOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F5928815AB600518908 /* LetvMobileCDEOperation.h */; };
+		E4D41FEF28815AB600518908 /* LetvMobileCDETaskTrait.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F5A28815AB600518908 /* LetvMobileCDETaskTrait.h */; };
+		E4D41FF028815AB600518908 /* LetvMobileCDEService.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F5B28815AB600518908 /* LetvMobileCDEService.m */; };
+		E4D41FF128815AB600518908 /* LetvMobileCDEOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F5C28815AB600518908 /* LetvMobileCDEOperation.m */; };
+		E4D41FF228815AB600518908 /* LetvMobileCDNParseService.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F5E28815AB600518908 /* LetvMobileCDNParseService.m */; };
+		E4D41FF328815AB600518908 /* LetvMobileCDNParseService.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F5F28815AB600518908 /* LetvMobileCDNParseService.h */; };
+		E4D41FF428815AB600518908 /* LetvMobileLinkShellService.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F6128815AB600518908 /* LetvMobileLinkShellService.m */; };
+		E4D41FF528815AB600518908 /* LetvMobileLinkShellService.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F6228815AB600518908 /* LetvMobileLinkShellService.h */; };
+		E4D41FF628815AB600518908 /* LetvMobileModels.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F6528815AB600518908 /* LetvMobileModels.h */; };
+		E4D41FF728815AB600518908 /* LetvMobileModel.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F6628815AB600518908 /* LetvMobileModel.h */; };
+		E4D41FF828815AB600518908 /* LetvMobileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F6728815AB600518908 /* LetvMobileModel.m */; };
+		E4D41FF928815AB600518908 /* LetvMobileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F6928815AB600518908 /* LetvMobileLogger.h */; };
+		E4D41FFA28815AB600518908 /* LetvMobileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F6A28815AB600518908 /* LetvMobileLogger.m */; };
+		E4D41FFB28815AB600518908 /* LetvMobileLoginTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F6D28815AB600518908 /* LetvMobileLoginTracker.h */; };
+		E4D41FFC28815AB600518908 /* LetvMobileTrackingService.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F6E28815AB600518908 /* LetvMobileTrackingService.h */; };
+		E4D41FFD28815AB600518908 /* LetvMobilePlayTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F6F28815AB600518908 /* LetvMobilePlayTracker.m */; };
+		E4D41FFE28815AB600518908 /* FixedTrackingParametersHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F7028815AB600518908 /* FixedTrackingParametersHelper.h */; };
+		E4D41FFF28815AB600518908 /* LetvMobileLoginTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F7128815AB600518908 /* LetvMobileLoginTracker.m */; };
+		E4D4200028815AB600518908 /* LetvMobilePlayTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F7228815AB600518908 /* LetvMobilePlayTracker.h */; };
+		E4D4200128815AB600518908 /* LetvMobileTrackingService.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F7328815AB600518908 /* LetvMobileTrackingService.m */; };
+		E4D4200228815AB600518908 /* FixedTrackingParametersHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F7428815AB600518908 /* FixedTrackingParametersHelper.m */; };
+		E4D4200328815AB600518908 /* LetvMobileServicesGlue.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F7628815AB600518908 /* LetvMobileServicesGlue.h */; };
+		E4D4200428815AB600518908 /* LetvMobileServicesGlue.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F7728815AB600518908 /* LetvMobileServicesGlue.m */; };
+		E4D4200528815AB600518908 /* LetvMobileServices.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F7828815AB600518908 /* LetvMobileServices.h */; };
+		E4D4200628815AB600518908 /* LetvMobileReachabilityService.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F7A28815AB600518908 /* LetvMobileReachabilityService.m */; };
+		E4D4200728815AB600518908 /* LetvMobileReachabilityService.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F7B28815AB600518908 /* LetvMobileReachabilityService.h */; };
+		E4D4200828815AB600518908 /* LetvTimestampClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F7D28815AB600518908 /* LetvTimestampClient.m */; };
+		E4D4200928815AB600518908 /* LetvTimestampModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F7E28815AB600518908 /* LetvTimestampModel.m */; };
+		E4D4200A28815AB600518908 /* LetvCPUTickCountHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F7F28815AB600518908 /* LetvCPUTickCountHelper.m */; };
+		E4D4200B28815AB600518908 /* LetvMobileTimestampService.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F8028815AB600518908 /* LetvMobileTimestampService.h */; };
+		E4D4200C28815AB600518908 /* LetvTimestampModel.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F8128815AB600518908 /* LetvTimestampModel.h */; };
+		E4D4200D28815AB600518908 /* LetvTimestampClient.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F8228815AB600518908 /* LetvTimestampClient.h */; };
+		E4D4200E28815AB600518908 /* LetvMobileTimestampService.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F8328815AB600518908 /* LetvMobileTimestampService.m */; };
+		E4D4200F28815AB600518908 /* LetvCPUTickCountHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F8428815AB600518908 /* LetvCPUTickCountHelper.h */; };
+		E4D4201028815AB600518908 /* LetvMobileServicesContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F8628815AB600518908 /* LetvMobileServicesContainer.h */; };
+		E4D4201128815AB600518908 /* LetvMobileServicesContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F8728815AB600518908 /* LetvMobileServicesContainer.m */; };
+		E4D4201228815AB600518908 /* LetvMobileAppScheduleService.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F8928815AB600518908 /* LetvMobileAppScheduleService.h */; };
+		E4D4201328815AB600518908 /* LetvMobileAppScheduleService.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F8A28815AB600518908 /* LetvMobileAppScheduleService.m */; };
+		E4D4201428815AB600518908 /* LetvMobilePlayTrackingTrait.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F8C28815AB600518908 /* LetvMobilePlayTrackingTrait.h */; };
+		E4D4201528815AB600518908 /* LetvMobileTrackingServiceTrait.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F8D28815AB600518908 /* LetvMobileTrackingServiceTrait.h */; };
+		E4D4201628815AB600518908 /* LetvMobileLoginTrackingTrait.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F8E28815AB600518908 /* LetvMobileLoginTrackingTrait.h */; };
+		E4D4201728815AB600518908 /* LetvMobileTimestampServiceTrait.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F8F28815AB600518908 /* LetvMobileTimestampServiceTrait.h */; };
+		E4D4201828815AB600518908 /* LetvMobileAppScheduleServiceTrait.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F9028815AB600518908 /* LetvMobileAppScheduleServiceTrait.h */; };
+		E4D4201928815AB600518908 /* LetvMobileTrackingTrait.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F9128815AB600518908 /* LetvMobileTrackingTrait.h */; };
+		E4D4201A28815AB600518908 /* LetvMobileReachabilityServiceTrait.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F9228815AB600518908 /* LetvMobileReachabilityServiceTrait.h */; };
+		E4D4201B28815AB600518908 /* LetvMobileStartupTrait.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F9328815AB600518908 /* LetvMobileStartupTrait.h */; };
+		E4D4201C28815AB600518908 /* LetvMobileCDEInfoTrait.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F9428815AB600518908 /* LetvMobileCDEInfoTrait.h */; };
+		E4D4201D28815AB600518908 /* LetvMobileServicesFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F9628815AB600518908 /* LetvMobileServicesFactory.h */; };
+		E4D4201E28815AB600518908 /* LetvMobileServicesFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F9728815AB600518908 /* LetvMobileServicesFactory.m */; };
+		E4D4201F28815AB600518908 /* LetvPlayerManager_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F9828815AB600518908 /* LetvPlayerManager_Private.h */; };
+		E4D4202028815AB600518908 /* LetvPlayerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F9928815AB600518908 /* LetvPlayerManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D4202128815AB600518908 /* LetvPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F9A28815AB600518908 /* LetvPlayerManager.m */; };
+		E4D4202228815AB600518908 /* LetvPlayerSdkController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D41F9B28815AB600518908 /* LetvPlayerSdkController.m */; };
+		E4D4202328815AB600518908 /* LetvPlayerSdkController.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D41F9C28815AB600518908 /* LetvPlayerSdkController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D4203828815B6300518908 /* CdeService.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D4203328815B6300518908 /* CdeService.h */; };
+		E4D4203928815B6300518908 /* CdeDownloadItem.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D4203428815B6300518908 /* CdeDownloadItem.h */; };
+		E4D4203A28815B6300518908 /* LetvCDE.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D4203528815B6300518908 /* LetvCDE.h */; };
+		E4D4203B28815B6300518908 /* CdeUrl.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D4203628815B6300518908 /* CdeUrl.h */; };
+		E4D4203C28815B6300518908 /* CdeDownloads.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D4203728815B6300518908 /* CdeDownloads.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E47F830128816ABE00989B62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4D41EB6288156DF00518908 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4D41EBE288156DF00518908;
+			remoteInfo = LetvPlayer;
+		};
+		E4D41ECB288156DF00518908 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4D41EB6288156DF00518908 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4D41EBE288156DF00518908;
+			remoteInfo = LetvPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E47F830328816ABE00989B62 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E47F830028816ABE00989B62 /* LetvPlayer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		04D67B6BE9CD19C7780AD474 /* Pods_LetvPlayerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetvPlayerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15D89D32B1189D8F311D6E67 /* Pods-LetvPlayerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetvPlayerDemo.release.xcconfig"; path = "Target Support Files/Pods-LetvPlayerDemo/Pods-LetvPlayerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		1CF7AEEF95809B4F8EDC0125 /* Pods-LetvPlayerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetvPlayerDemo.debug.xcconfig"; path = "Target Support Files/Pods-LetvPlayerDemo/Pods-LetvPlayerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		76E2557E2908107EFA433552 /* Pods-LetvPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetvPlayer.release.xcconfig"; path = "Target Support Files/Pods-LetvPlayer/Pods-LetvPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		9AB2D3CE8E428EA54C2B0588 /* Pods-LetvPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetvPlayer.debug.xcconfig"; path = "Target Support Files/Pods-LetvPlayer/Pods-LetvPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		E418FC0E288902B200A3721A /* VideoPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayerView.h; sourceTree = "<group>"; };
+		E418FC0F288902B200A3721A /* VideoPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerView.m; sourceTree = "<group>"; };
+		E418FC11288902C800A3721A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E418FC13288902D500A3721A /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		E47F82E628816A0C00989B62 /* LetvPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetvPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E47F82E828816A0C00989B62 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E47F82E928816A0C00989B62 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E47F82EB28816A0C00989B62 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		E47F82EC28816A0C00989B62 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		E47F82EE28816A0C00989B62 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E47F82EF28816A0C00989B62 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E47F82F228816A0C00989B62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E47F82F428816A0D00989B62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E47F82F728816A0D00989B62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E47F82F928816A0D00989B62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E47F82FA28816A0D00989B62 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E47F830B288508AC00989B62 /* LetvPlayerHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LetvPlayerHeader.h; sourceTree = "<group>"; };
+		E47F830D28854A4100989B62 /* libzlib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzlib.a; sourceTree = "<group>"; };
+		E47F837228856BA600989B62 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		E4D41EBF288156DF00518908 /* LetvPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LetvPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4D41EC2288156DF00518908 /* LetvPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LetvPlayer.h; sourceTree = "<group>"; };
+		E4D41EC3288156DF00518908 /* LetvPlayer.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = LetvPlayer.docc; sourceTree = "<group>"; };
+		E4D41EC9288156DF00518908 /* LetvPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetvPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4D41ECE288156DF00518908 /* LetvPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LetvPlayerTests.m; sourceTree = "<group>"; };
+		E4D41EDB28815AB600518908 /* AFHTTPSessionManager+Rx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHTTPSessionManager+Rx.h"; sourceTree = "<group>"; };
+		E4D41EDC28815AB600518908 /* AFHTTPSessionManager+Rx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+Rx.m"; sourceTree = "<group>"; };
+		E4D41EDD28815AB600518908 /* RxAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RxAFNetworking.h; sourceTree = "<group>"; };
+		E4D41EE028815AB600518908 /* NSObject+LetvContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LetvContainer.h"; sourceTree = "<group>"; };
+		E4D41EE128815AB600518908 /* LetvMobileContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvMobileContainer.m; sourceTree = "<group>"; };
+		E4D41EE228815AB600518908 /* NSObject+LetvContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LetvContainer.m"; sourceTree = "<group>"; };
+		E4D41EE328815AB600518908 /* LetvMobileContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileContainer.h; sourceTree = "<group>"; };
+		E4D41EE528815AB600518908 /* LetvMobileDeployment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileDeployment.h; sourceTree = "<group>"; };
+		E4D41EE728815AB600518908 /* LetvSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvSingleton.h; sourceTree = "<group>"; };
+		E4D41EEA28815AB600518908 /* NSString+LetvMD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LetvMD5.m"; sourceTree = "<group>"; };
+		E4D41EEB28815AB600518908 /* NSString+LetvHttpExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LetvHttpExtensions.h"; sourceTree = "<group>"; };
+		E4D41EEC28815AB600518908 /* NSString+LetvHttpExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LetvHttpExtensions.m"; sourceTree = "<group>"; };
+		E4D41EED28815AB600518908 /* NSString+LetvMD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LetvMD5.h"; sourceTree = "<group>"; };
+		E4D41EEF28815AB600518908 /* NSData+LetvMD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+LetvMD5.h"; sourceTree = "<group>"; };
+		E4D41EF028815AB600518908 /* NSData+LetvMD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+LetvMD5.m"; sourceTree = "<group>"; };
+		E4D41EF228815AB600518908 /* NSArray+LetvFP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+LetvFP.m"; sourceTree = "<group>"; };
+		E4D41EF328815AB600518908 /* NSArray+LetvFP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+LetvFP.h"; sourceTree = "<group>"; };
+		E4D41EF528815AB600518908 /* NSError+Letv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+Letv.h"; sourceTree = "<group>"; };
+		E4D41EF628815AB600518908 /* NSError+Letv.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+Letv.m"; sourceTree = "<group>"; };
+		E4D41EF828815AB600518908 /* RACSignal+LetvMapError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACSignal+LetvMapError.h"; sourceTree = "<group>"; };
+		E4D41EF928815AB600518908 /* RACSignal+LetvMapError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+LetvMapError.m"; sourceTree = "<group>"; };
+		E4D41EFB28815AB600518908 /* LetvMobileCancelTrait.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileCancelTrait.h; sourceTree = "<group>"; };
+		E4D41EFC28815AB600518908 /* LetvMobileCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileCore.h; sourceTree = "<group>"; };
+		E4D41EFF28815AB600518908 /* AFHTTPSessionManager+Letv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHTTPSessionManager+Letv.h"; sourceTree = "<group>"; };
+		E4D41F0028815AB600518908 /* LetvHttpRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvHttpRequestSerializer.m; sourceTree = "<group>"; };
+		E4D41F0128815AB600518908 /* LetvHttpSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvHttpSessionManager.m; sourceTree = "<group>"; };
+		E4D41F0228815AB600518908 /* LetvHttpRequestSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvHttpRequestSerializer.h; sourceTree = "<group>"; };
+		E4D41F0328815AB600518908 /* AFHTTPSessionManager+Letv.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+Letv.m"; sourceTree = "<group>"; };
+		E4D41F0428815AB600518908 /* LetvHttpSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvHttpSessionManager.h; sourceTree = "<group>"; };
+		E4D41F0628815AB600518908 /* LetvMobileNetworkingContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvMobileNetworkingContainer.m; sourceTree = "<group>"; };
+		E4D41F0728815AB600518908 /* LetvMobileNetworkingContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileNetworkingContainer.h; sourceTree = "<group>"; };
+		E4D41F0828815AB600518908 /* LetvMobileNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileNetworking.h; sourceTree = "<group>"; };
+		E4D41F0A28815AB600518908 /* LetvMobileReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvMobileReachability.m; sourceTree = "<group>"; };
+		E4D41F0B28815AB600518908 /* LetvMobileReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileReachability.h; sourceTree = "<group>"; };
+		E4D41F0D28815AB600518908 /* RACSignal+LetvMapModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+LetvMapModel.m"; sourceTree = "<group>"; };
+		E4D41F0E28815AB600518908 /* RACSignal+LetvMapModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACSignal+LetvMapModel.h"; sourceTree = "<group>"; };
+		E4D41F1128815AB600518908 /* LetvMobileHTTPClientTrait.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileHTTPClientTrait.h; sourceTree = "<group>"; };
+		E4D41F1328815AB600518908 /* LetvMobileHTTPDefaultGETParametersTrait.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileHTTPDefaultGETParametersTrait.h; sourceTree = "<group>"; };
+		E4D41F1528815AB600518908 /* LetvHttpServerUniversalParametersHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvHttpServerUniversalParametersHelper.m; sourceTree = "<group>"; };
+		E4D41F1628815AB600518908 /* LetvHttpServerAPISignatureHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvHttpServerAPISignatureHelper.h; sourceTree = "<group>"; };
+		E4D41F1728815AB600518908 /* LetvHttpServerUniversalParametersHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvHttpServerUniversalParametersHelper.h; sourceTree = "<group>"; };
+		E4D41F1828815AB600518908 /* LetvHttpServerAPISignatureHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvHttpServerAPISignatureHelper.m; sourceTree = "<group>"; };
+		E4D41F1A28815AB600518908 /* LetvMobileNetworkingFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileNetworkingFactory.h; sourceTree = "<group>"; };
+		E4D41F1B28815AB600518908 /* LetvMobileNetworkingFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvMobileNetworkingFactory.m; sourceTree = "<group>"; };
+		E4D41F1E28815AB600518908 /* LetvMobileVideoMergeClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileVideoMergeClient.h; sourceTree = "<group>"; };
+		E4D41F1F28815AB600518908 /* LetvMobilePlayAPIModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvMobilePlayAPIModel.m; sourceTree = "<group>"; };
+		E4D41F2028815AB600518908 /* LetvMobileNetworkAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileNetworkAPIClient.h; sourceTree = "<group>"; };
+		E4D41F2128815AB600518908 /* LetvMobileVideoMergeClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvMobileVideoMergeClient.m; sourceTree = "<group>"; };
+		E4D41F2228815AB600518908 /* LetvMobilePlayAPIModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobilePlayAPIModel.h; sourceTree = "<group>"; };
+		E4D41F2328815AB600518908 /* LetvMobileNetworkAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvMobileNetworkAPIClient.m; sourceTree = "<group>"; };
+		E4D41F2528815AB600518908 /* LetvMobileMediaLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileMediaLoader.h; sourceTree = "<group>"; };
+		E4D41F2628815AB600518908 /* LetvMobileMediaLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvMobileMediaLoader.m; sourceTree = "<group>"; };
+		E4D41F2828815AB600518908 /* IMobilePlayerCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMobilePlayerCore.h; sourceTree = "<group>"; };
+		E4D41F2B28815AB600518908 /* LetvMobileLinkShellGlue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileLinkShellGlue.h; sourceTree = "<group>"; };
+		E4D41F2C28815AB600518908 /* LetvMobileLinkShellGlue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvMobileLinkShellGlue.m; sourceTree = "<group>"; };
+		E4D41F2E28815AB600518908 /* LetvMobileCDEClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvMobileCDEClient.m; sourceTree = "<group>"; };
+		E4D41F2F28815AB600518908 /* LetvMobileCDEGlue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileCDEGlue.h; sourceTree = "<group>"; };
+		E4D41F3028815AB600518908 /* LetvMobileCDEClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileCDEClient.h; sourceTree = "<group>"; };
+		E4D41F3128815AB600518908 /* LetvMobileCDEGlue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvMobileCDEGlue.m; sourceTree = "<group>"; };
+		E4D41F3328815AB600518908 /* LetvMobileAdvertiseGlue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileAdvertiseGlue.h; sourceTree = "<group>"; };
+		E4D41F3428815AB600518908 /* LetvMobileAdvertiseGlue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvMobileAdvertiseGlue.m; sourceTree = "<group>"; };
+		E4D41F3628815AB600518908 /* LetvMobileCDNGlue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvMobileCDNGlue.m; sourceTree = "<group>"; };
+		E4D41F3728815AB600518908 /* LetvMobileCDNGlue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileCDNGlue.h; sourceTree = "<group>"; };
+		E4D41F3928815AB600518908 /* LetvMobileMediaLoaderContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileMediaLoaderContainer.h; sourceTree = "<group>"; };
+		E4D41F3A28815AB600518908 /* LetvMobileMediaLoaderContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvMobileMediaLoaderContainer.m; sourceTree = "<group>"; };
+		E4D41F3D28815AB600518908 /* LetvMobileMediaLoadModuleTrait.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileMediaLoadModuleTrait.h; sourceTree = "<group>"; };
+		E4D41F3F28815AB600518908 /* LetvMobileMediaRequestTrait.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileMediaRequestTrait.h; sourceTree = "<group>"; };
+		E4D41F4028815AB600518908 /* LetvMobileMediaPlayTrait.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileMediaPlayTrait.h; sourceTree = "<group>"; };
+		E4D41F4128815AB600518908 /* LetvMobileMediaLoadTrait.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileMediaLoadTrait.h; sourceTree = "<group>"; };
+		E4D41F4328815AB600518908 /* LetvMobileCDEModuleTrait.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileCDEModuleTrait.h; sourceTree = "<group>"; };
+		E4D41F4528815AB600518908 /* LetvMobileAuthModuleTrait.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileAuthModuleTrait.h; sourceTree = "<group>"; };
+		E4D41F4728815AB600518908 /* LetvMobilePlayRequestModuleTrait.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobilePlayRequestModuleTrait.h; sourceTree = "<group>"; };
+		E4D41F4928815AB600518908 /* LetvMobileAdvertiseModuleTrait.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileAdvertiseModuleTrait.h; sourceTree = "<group>"; };
+		E4D41F4B28815AB600518908 /* LetvMobileLinkShellModuleTrait.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileLinkShellModuleTrait.h; sourceTree = "<group>"; };
+		E4D41F4D28815AB600518908 /* LetvMobileCDNModuleTrait.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileCDNModuleTrait.h; sourceTree = "<group>"; };
+		E4D41F4F28815AB600518908 /* LetvMobileMediaLoaderDefaultParametersTrait.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileMediaLoaderDefaultParametersTrait.h; sourceTree = "<group>"; };
+		E4D41F5128815AB600518908 /* LetvMobilePlayerKitFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvMobilePlayerKitFactory.m; sourceTree = "<group>"; };
+		E4D41F5228815AB600518908 /* LetvMobilePlayerKitFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobilePlayerKitFactory.h; sourceTree = "<group>"; };
+		E4D41F5528815AB600518908 /* LetvMobileAuthService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileAuthService.h; sourceTree = "<group>"; };
+		E4D41F5628815AB600518908 /* LetvMobileAuthService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvMobileAuthService.m; sourceTree = "<group>"; };
+		E4D41F5828815AB600518908 /* LetvMobileCDEService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileCDEService.h; sourceTree = "<group>"; };
+		E4D41F5928815AB600518908 /* LetvMobileCDEOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileCDEOperation.h; sourceTree = "<group>"; };
+		E4D41F5A28815AB600518908 /* LetvMobileCDETaskTrait.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileCDETaskTrait.h; sourceTree = "<group>"; };
+		E4D41F5B28815AB600518908 /* LetvMobileCDEService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvMobileCDEService.m; sourceTree = "<group>"; };
+		E4D41F5C28815AB600518908 /* LetvMobileCDEOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvMobileCDEOperation.m; sourceTree = "<group>"; };
+		E4D41F5E28815AB600518908 /* LetvMobileCDNParseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvMobileCDNParseService.m; sourceTree = "<group>"; };
+		E4D41F5F28815AB600518908 /* LetvMobileCDNParseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileCDNParseService.h; sourceTree = "<group>"; };
+		E4D41F6128815AB600518908 /* LetvMobileLinkShellService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvMobileLinkShellService.m; sourceTree = "<group>"; };
+		E4D41F6228815AB600518908 /* LetvMobileLinkShellService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileLinkShellService.h; sourceTree = "<group>"; };
+		E4D41F6528815AB600518908 /* LetvMobileModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileModels.h; sourceTree = "<group>"; };
+		E4D41F6628815AB600518908 /* LetvMobileModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileModel.h; sourceTree = "<group>"; };
+		E4D41F6728815AB600518908 /* LetvMobileModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvMobileModel.m; sourceTree = "<group>"; };
+		E4D41F6928815AB600518908 /* LetvMobileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileLogger.h; sourceTree = "<group>"; };
+		E4D41F6A28815AB600518908 /* LetvMobileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvMobileLogger.m; sourceTree = "<group>"; };
+		E4D41F6D28815AB600518908 /* LetvMobileLoginTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileLoginTracker.h; sourceTree = "<group>"; };
+		E4D41F6E28815AB600518908 /* LetvMobileTrackingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileTrackingService.h; sourceTree = "<group>"; };
+		E4D41F6F28815AB600518908 /* LetvMobilePlayTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvMobilePlayTracker.m; sourceTree = "<group>"; };
+		E4D41F7028815AB600518908 /* FixedTrackingParametersHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixedTrackingParametersHelper.h; sourceTree = "<group>"; };
+		E4D41F7128815AB600518908 /* LetvMobileLoginTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvMobileLoginTracker.m; sourceTree = "<group>"; };
+		E4D41F7228815AB600518908 /* LetvMobilePlayTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobilePlayTracker.h; sourceTree = "<group>"; };
+		E4D41F7328815AB600518908 /* LetvMobileTrackingService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvMobileTrackingService.m; sourceTree = "<group>"; };
+		E4D41F7428815AB600518908 /* FixedTrackingParametersHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixedTrackingParametersHelper.m; sourceTree = "<group>"; };
+		E4D41F7628815AB600518908 /* LetvMobileServicesGlue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileServicesGlue.h; sourceTree = "<group>"; };
+		E4D41F7728815AB600518908 /* LetvMobileServicesGlue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvMobileServicesGlue.m; sourceTree = "<group>"; };
+		E4D41F7828815AB600518908 /* LetvMobileServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileServices.h; sourceTree = "<group>"; };
+		E4D41F7A28815AB600518908 /* LetvMobileReachabilityService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvMobileReachabilityService.m; sourceTree = "<group>"; };
+		E4D41F7B28815AB600518908 /* LetvMobileReachabilityService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileReachabilityService.h; sourceTree = "<group>"; };
+		E4D41F7D28815AB600518908 /* LetvTimestampClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvTimestampClient.m; sourceTree = "<group>"; };
+		E4D41F7E28815AB600518908 /* LetvTimestampModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvTimestampModel.m; sourceTree = "<group>"; };
+		E4D41F7F28815AB600518908 /* LetvCPUTickCountHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvCPUTickCountHelper.m; sourceTree = "<group>"; };
+		E4D41F8028815AB600518908 /* LetvMobileTimestampService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileTimestampService.h; sourceTree = "<group>"; };
+		E4D41F8128815AB600518908 /* LetvTimestampModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvTimestampModel.h; sourceTree = "<group>"; };
+		E4D41F8228815AB600518908 /* LetvTimestampClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvTimestampClient.h; sourceTree = "<group>"; };
+		E4D41F8328815AB600518908 /* LetvMobileTimestampService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvMobileTimestampService.m; sourceTree = "<group>"; };
+		E4D41F8428815AB600518908 /* LetvCPUTickCountHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvCPUTickCountHelper.h; sourceTree = "<group>"; };
+		E4D41F8628815AB600518908 /* LetvMobileServicesContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileServicesContainer.h; sourceTree = "<group>"; };
+		E4D41F8728815AB600518908 /* LetvMobileServicesContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvMobileServicesContainer.m; sourceTree = "<group>"; };
+		E4D41F8928815AB600518908 /* LetvMobileAppScheduleService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileAppScheduleService.h; sourceTree = "<group>"; };
+		E4D41F8A28815AB600518908 /* LetvMobileAppScheduleService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvMobileAppScheduleService.m; sourceTree = "<group>"; };
+		E4D41F8C28815AB600518908 /* LetvMobilePlayTrackingTrait.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobilePlayTrackingTrait.h; sourceTree = "<group>"; };
+		E4D41F8D28815AB600518908 /* LetvMobileTrackingServiceTrait.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileTrackingServiceTrait.h; sourceTree = "<group>"; };
+		E4D41F8E28815AB600518908 /* LetvMobileLoginTrackingTrait.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileLoginTrackingTrait.h; sourceTree = "<group>"; };
+		E4D41F8F28815AB600518908 /* LetvMobileTimestampServiceTrait.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileTimestampServiceTrait.h; sourceTree = "<group>"; };
+		E4D41F9028815AB600518908 /* LetvMobileAppScheduleServiceTrait.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileAppScheduleServiceTrait.h; sourceTree = "<group>"; };
+		E4D41F9128815AB600518908 /* LetvMobileTrackingTrait.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileTrackingTrait.h; sourceTree = "<group>"; };
+		E4D41F9228815AB600518908 /* LetvMobileReachabilityServiceTrait.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileReachabilityServiceTrait.h; sourceTree = "<group>"; };
+		E4D41F9328815AB600518908 /* LetvMobileStartupTrait.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileStartupTrait.h; sourceTree = "<group>"; };
+		E4D41F9428815AB600518908 /* LetvMobileCDEInfoTrait.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileCDEInfoTrait.h; sourceTree = "<group>"; };
+		E4D41F9628815AB600518908 /* LetvMobileServicesFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvMobileServicesFactory.h; sourceTree = "<group>"; };
+		E4D41F9728815AB600518908 /* LetvMobileServicesFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvMobileServicesFactory.m; sourceTree = "<group>"; };
+		E4D41F9828815AB600518908 /* LetvPlayerManager_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvPlayerManager_Private.h; sourceTree = "<group>"; };
+		E4D41F9928815AB600518908 /* LetvPlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvPlayerManager.h; sourceTree = "<group>"; };
+		E4D41F9A28815AB600518908 /* LetvPlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvPlayerManager.m; sourceTree = "<group>"; };
+		E4D41F9B28815AB600518908 /* LetvPlayerSdkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvPlayerSdkController.m; sourceTree = "<group>"; };
+		E4D41F9C28815AB600518908 /* LetvPlayerSdkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvPlayerSdkController.h; sourceTree = "<group>"; };
+		E4D4202528815AF500518908 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		E4D4202628815AF500518908 /* libglog.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libglog.a; sourceTree = "<group>"; };
+		E4D4202728815AF500518908 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		E4D4202928815AF500518908 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcurl.a; sourceTree = "<group>"; };
+		E4D4202A28815AF500518908 /* libboost.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libboost.a; sourceTree = "<group>"; };
+		E4D4202B28815AF500518908 /* libcde-sdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libcde-sdk.a"; sourceTree = "<group>"; };
+		E4D4203328815B6300518908 /* CdeService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CdeService.h; sourceTree = "<group>"; };
+		E4D4203428815B6300518908 /* CdeDownloadItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CdeDownloadItem.h; sourceTree = "<group>"; };
+		E4D4203528815B6300518908 /* LetvCDE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvCDE.h; sourceTree = "<group>"; };
+		E4D4203628815B6300518908 /* CdeUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CdeUrl.h; sourceTree = "<group>"; };
+		E4D4203728815B6300518908 /* CdeDownloads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CdeDownloads.h; sourceTree = "<group>"; };
+		FC9718020EE128182C3B06E4 /* Pods_LetvPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetvPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E47F82E328816A0C00989B62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E47F837328856BA600989B62 /* libc++.tbd in Frameworks */,
+				E47F830A288170E000989B62 /* libcde-sdk.a in Frameworks */,
+				E418FC14288902D500A3721A /* AVKit.framework in Frameworks */,
+				E418FC12288902C800A3721A /* AVFoundation.framework in Frameworks */,
+				E47F830E28854A4100989B62 /* libzlib.a in Frameworks */,
+				E47F8308288170DA00989B62 /* libcurl.a in Frameworks */,
+				E47F8306288170D500989B62 /* libssl.a in Frameworks */,
+				E47F8305288170D300989B62 /* libglog.a in Frameworks */,
+				E47F82FF28816ABE00989B62 /* LetvPlayer.framework in Frameworks */,
+				E47F8304288170D000989B62 /* libcrypto.a in Frameworks */,
+				E47F8309288170DD00989B62 /* libboost.a in Frameworks */,
+				A494446E4B58ED980CA1ED1F /* Pods_LetvPlayerDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4D41EBC288156DF00518908 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C9657E49B101649EF8317F9 /* Pods_LetvPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4D41EC6288156DF00518908 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D41ECA288156DF00518908 /* LetvPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		99406CD68258DA0A7D6B3136 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9AB2D3CE8E428EA54C2B0588 /* Pods-LetvPlayer.debug.xcconfig */,
+				76E2557E2908107EFA433552 /* Pods-LetvPlayer.release.xcconfig */,
+				1CF7AEEF95809B4F8EDC0125 /* Pods-LetvPlayerDemo.debug.xcconfig */,
+				15D89D32B1189D8F311D6E67 /* Pods-LetvPlayerDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B88030D1A0892EA3716B0D53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E418FC13288902D500A3721A /* AVKit.framework */,
+				E418FC11288902C800A3721A /* AVFoundation.framework */,
+				E47F837228856BA600989B62 /* libc++.tbd */,
+				FC9718020EE128182C3B06E4 /* Pods_LetvPlayer.framework */,
+				04D67B6BE9CD19C7780AD474 /* Pods_LetvPlayerDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E47F82E728816A0C00989B62 /* LetvPlayerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E418FC0E288902B200A3721A /* VideoPlayerView.h */,
+				E418FC0F288902B200A3721A /* VideoPlayerView.m */,
+				E47F82E828816A0C00989B62 /* AppDelegate.h */,
+				E47F82E928816A0C00989B62 /* AppDelegate.m */,
+				E47F82EB28816A0C00989B62 /* SceneDelegate.h */,
+				E47F82EC28816A0C00989B62 /* SceneDelegate.m */,
+				E47F82EE28816A0C00989B62 /* ViewController.h */,
+				E47F82EF28816A0C00989B62 /* ViewController.m */,
+				E47F82F128816A0C00989B62 /* Main.storyboard */,
+				E47F82F428816A0D00989B62 /* Assets.xcassets */,
+				E47F82F628816A0D00989B62 /* LaunchScreen.storyboard */,
+				E47F82F928816A0D00989B62 /* Info.plist */,
+				E47F82FA28816A0D00989B62 /* main.m */,
+			);
+			path = LetvPlayerDemo;
+			sourceTree = "<group>";
+		};
+		E4D41EB5288156DF00518908 = {
+			isa = PBXGroup;
+			children = (
+				E4D4202428815AF500518908 /* 3rd */,
+				E4D41EC1288156DF00518908 /* LetvPlayer */,
+				E4D41ECD288156DF00518908 /* LetvPlayerTests */,
+				E47F82E728816A0C00989B62 /* LetvPlayerDemo */,
+				E4D41EC0288156DF00518908 /* Products */,
+				99406CD68258DA0A7D6B3136 /* Pods */,
+				B88030D1A0892EA3716B0D53 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E4D41EC0288156DF00518908 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41EBF288156DF00518908 /* LetvPlayer.framework */,
+				E4D41EC9288156DF00518908 /* LetvPlayerTests.xctest */,
+				E47F82E628816A0C00989B62 /* LetvPlayerDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4D41EC1288156DF00518908 /* LetvPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F9828815AB600518908 /* LetvPlayerManager_Private.h */,
+				E4D41F9928815AB600518908 /* LetvPlayerManager.h */,
+				E4D41F9A28815AB600518908 /* LetvPlayerManager.m */,
+				E4D41F9C28815AB600518908 /* LetvPlayerSdkController.h */,
+				E4D41F9B28815AB600518908 /* LetvPlayerSdkController.m */,
+				E4D41ED928815AB600518908 /* source */,
+				E4D41EC2288156DF00518908 /* LetvPlayer.h */,
+				E4D41EC3288156DF00518908 /* LetvPlayer.docc */,
+				E47F830B288508AC00989B62 /* LetvPlayerHeader.h */,
+			);
+			path = LetvPlayer;
+			sourceTree = "<group>";
+		};
+		E4D41ECD288156DF00518908 /* LetvPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41ECE288156DF00518908 /* LetvPlayerTests.m */,
+			);
+			path = LetvPlayerTests;
+			sourceTree = "<group>";
+		};
+		E4D41ED928815AB600518908 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41EDA28815AB600518908 /* RxAFNetworking */,
+				E4D41EDE28815AB600518908 /* Core */,
+				E4D41EFD28815AB600518908 /* Networking */,
+				E4D41F1C28815AB600518908 /* MediaLoader */,
+				E4D41F6328815AB600518908 /* Resources */,
+				E4D41F6428815AB600518908 /* Models */,
+				E4D41F6828815AB600518908 /* Logging */,
+				E4D41F6B28815AB600518908 /* Services */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		E4D41EDA28815AB600518908 /* RxAFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41EDB28815AB600518908 /* AFHTTPSessionManager+Rx.h */,
+				E4D41EDC28815AB600518908 /* AFHTTPSessionManager+Rx.m */,
+				E4D41EDD28815AB600518908 /* RxAFNetworking.h */,
+			);
+			path = RxAFNetworking;
+			sourceTree = "<group>";
+		};
+		E4D41EDE28815AB600518908 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41EDF28815AB600518908 /* Inject */,
+				E4D41EE428815AB600518908 /* Deployment */,
+				E4D41EE628815AB600518908 /* Singleton */,
+				E4D41EE828815AB600518908 /* Foundation+Letv */,
+				E4D41EF728815AB600518908 /* ReactiveObjC+Letv */,
+				E4D41EFA28815AB600518908 /* AsyncOperation */,
+				E4D41EFC28815AB600518908 /* LetvMobileCore.h */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E4D41EDF28815AB600518908 /* Inject */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41EE028815AB600518908 /* NSObject+LetvContainer.h */,
+				E4D41EE128815AB600518908 /* LetvMobileContainer.m */,
+				E4D41EE228815AB600518908 /* NSObject+LetvContainer.m */,
+				E4D41EE328815AB600518908 /* LetvMobileContainer.h */,
+			);
+			path = Inject;
+			sourceTree = "<group>";
+		};
+		E4D41EE428815AB600518908 /* Deployment */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41EE528815AB600518908 /* LetvMobileDeployment.h */,
+			);
+			path = Deployment;
+			sourceTree = "<group>";
+		};
+		E4D41EE628815AB600518908 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41EE728815AB600518908 /* LetvSingleton.h */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		E4D41EE828815AB600518908 /* Foundation+Letv */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41EE928815AB600518908 /* NSString+Letv */,
+				E4D41EEE28815AB600518908 /* NSData+Letv */,
+				E4D41EF128815AB600518908 /* NSArray+Letv */,
+				E4D41EF428815AB600518908 /* NSError+Letv */,
+			);
+			path = "Foundation+Letv";
+			sourceTree = "<group>";
+		};
+		E4D41EE928815AB600518908 /* NSString+Letv */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41EEA28815AB600518908 /* NSString+LetvMD5.m */,
+				E4D41EEB28815AB600518908 /* NSString+LetvHttpExtensions.h */,
+				E4D41EEC28815AB600518908 /* NSString+LetvHttpExtensions.m */,
+				E4D41EED28815AB600518908 /* NSString+LetvMD5.h */,
+			);
+			path = "NSString+Letv";
+			sourceTree = "<group>";
+		};
+		E4D41EEE28815AB600518908 /* NSData+Letv */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41EEF28815AB600518908 /* NSData+LetvMD5.h */,
+				E4D41EF028815AB600518908 /* NSData+LetvMD5.m */,
+			);
+			path = "NSData+Letv";
+			sourceTree = "<group>";
+		};
+		E4D41EF128815AB600518908 /* NSArray+Letv */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41EF228815AB600518908 /* NSArray+LetvFP.m */,
+				E4D41EF328815AB600518908 /* NSArray+LetvFP.h */,
+			);
+			path = "NSArray+Letv";
+			sourceTree = "<group>";
+		};
+		E4D41EF428815AB600518908 /* NSError+Letv */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41EF528815AB600518908 /* NSError+Letv.h */,
+				E4D41EF628815AB600518908 /* NSError+Letv.m */,
+			);
+			path = "NSError+Letv";
+			sourceTree = "<group>";
+		};
+		E4D41EF728815AB600518908 /* ReactiveObjC+Letv */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41EF828815AB600518908 /* RACSignal+LetvMapError.h */,
+				E4D41EF928815AB600518908 /* RACSignal+LetvMapError.m */,
+			);
+			path = "ReactiveObjC+Letv";
+			sourceTree = "<group>";
+		};
+		E4D41EFA28815AB600518908 /* AsyncOperation */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41EFB28815AB600518908 /* LetvMobileCancelTrait.h */,
+			);
+			path = AsyncOperation;
+			sourceTree = "<group>";
+		};
+		E4D41EFD28815AB600518908 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41EFE28815AB600518908 /* HTTPClient */,
+				E4D41F0528815AB600518908 /* Container */,
+				E4D41F0828815AB600518908 /* LetvMobileNetworking.h */,
+				E4D41F0928815AB600518908 /* Reachability */,
+				E4D41F0C28815AB600518908 /* ReactiveObjC+Letv */,
+				E4D41F0F28815AB600518908 /* Modules */,
+				E4D41F1428815AB600518908 /* Helpers */,
+				E4D41F1928815AB600518908 /* Factory */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E4D41EFE28815AB600518908 /* HTTPClient */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41EFF28815AB600518908 /* AFHTTPSessionManager+Letv.h */,
+				E4D41F0028815AB600518908 /* LetvHttpRequestSerializer.m */,
+				E4D41F0128815AB600518908 /* LetvHttpSessionManager.m */,
+				E4D41F0228815AB600518908 /* LetvHttpRequestSerializer.h */,
+				E4D41F0328815AB600518908 /* AFHTTPSessionManager+Letv.m */,
+				E4D41F0428815AB600518908 /* LetvHttpSessionManager.h */,
+			);
+			path = HTTPClient;
+			sourceTree = "<group>";
+		};
+		E4D41F0528815AB600518908 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F0628815AB600518908 /* LetvMobileNetworkingContainer.m */,
+				E4D41F0728815AB600518908 /* LetvMobileNetworkingContainer.h */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		E4D41F0928815AB600518908 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F0A28815AB600518908 /* LetvMobileReachability.m */,
+				E4D41F0B28815AB600518908 /* LetvMobileReachability.h */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		E4D41F0C28815AB600518908 /* ReactiveObjC+Letv */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F0D28815AB600518908 /* RACSignal+LetvMapModel.m */,
+				E4D41F0E28815AB600518908 /* RACSignal+LetvMapModel.h */,
+			);
+			path = "ReactiveObjC+Letv";
+			sourceTree = "<group>";
+		};
+		E4D41F0F28815AB600518908 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F1028815AB600518908 /* HTTPClientModule */,
+				E4D41F1228815AB600518908 /* HTTPDefaultParameter */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		E4D41F1028815AB600518908 /* HTTPClientModule */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F1128815AB600518908 /* LetvMobileHTTPClientTrait.h */,
+			);
+			path = HTTPClientModule;
+			sourceTree = "<group>";
+		};
+		E4D41F1228815AB600518908 /* HTTPDefaultParameter */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F1328815AB600518908 /* LetvMobileHTTPDefaultGETParametersTrait.h */,
+			);
+			path = HTTPDefaultParameter;
+			sourceTree = "<group>";
+		};
+		E4D41F1428815AB600518908 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F1528815AB600518908 /* LetvHttpServerUniversalParametersHelper.m */,
+				E4D41F1628815AB600518908 /* LetvHttpServerAPISignatureHelper.h */,
+				E4D41F1728815AB600518908 /* LetvHttpServerUniversalParametersHelper.h */,
+				E4D41F1828815AB600518908 /* LetvHttpServerAPISignatureHelper.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E4D41F1928815AB600518908 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F1A28815AB600518908 /* LetvMobileNetworkingFactory.h */,
+				E4D41F1B28815AB600518908 /* LetvMobileNetworkingFactory.m */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		E4D41F1C28815AB600518908 /* MediaLoader */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F1D28815AB600518908 /* Networking */,
+				E4D41F2428815AB600518908 /* MediaLoader */,
+				E4D41F2728815AB600518908 /* IMobilePlayerCore */,
+				E4D41F2928815AB600518908 /* Glues */,
+				E4D41F3828815AB600518908 /* Container */,
+				E4D41F3B28815AB600518908 /* Modules */,
+				E4D41F5028815AB600518908 /* Factory */,
+				E4D41F5328815AB600518908 /* Services */,
+			);
+			path = MediaLoader;
+			sourceTree = "<group>";
+		};
+		E4D41F1D28815AB600518908 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F1E28815AB600518908 /* LetvMobileVideoMergeClient.h */,
+				E4D41F1F28815AB600518908 /* LetvMobilePlayAPIModel.m */,
+				E4D41F2028815AB600518908 /* LetvMobileNetworkAPIClient.h */,
+				E4D41F2128815AB600518908 /* LetvMobileVideoMergeClient.m */,
+				E4D41F2228815AB600518908 /* LetvMobilePlayAPIModel.h */,
+				E4D41F2328815AB600518908 /* LetvMobileNetworkAPIClient.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E4D41F2428815AB600518908 /* MediaLoader */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F2528815AB600518908 /* LetvMobileMediaLoader.h */,
+				E4D41F2628815AB600518908 /* LetvMobileMediaLoader.m */,
+			);
+			path = MediaLoader;
+			sourceTree = "<group>";
+		};
+		E4D41F2728815AB600518908 /* IMobilePlayerCore */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F2828815AB600518908 /* IMobilePlayerCore.h */,
+			);
+			path = IMobilePlayerCore;
+			sourceTree = "<group>";
+		};
+		E4D41F2928815AB600518908 /* Glues */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F2A28815AB600518908 /* LinkShellGlue */,
+				E4D41F2D28815AB600518908 /* CDEGlue */,
+				E4D41F3228815AB600518908 /* AdvertiseGlue */,
+				E4D41F3528815AB600518908 /* CDNGlue */,
+			);
+			path = Glues;
+			sourceTree = "<group>";
+		};
+		E4D41F2A28815AB600518908 /* LinkShellGlue */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F2B28815AB600518908 /* LetvMobileLinkShellGlue.h */,
+				E4D41F2C28815AB600518908 /* LetvMobileLinkShellGlue.m */,
+			);
+			path = LinkShellGlue;
+			sourceTree = "<group>";
+		};
+		E4D41F2D28815AB600518908 /* CDEGlue */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F2E28815AB600518908 /* LetvMobileCDEClient.m */,
+				E4D41F2F28815AB600518908 /* LetvMobileCDEGlue.h */,
+				E4D41F3028815AB600518908 /* LetvMobileCDEClient.h */,
+				E4D41F3128815AB600518908 /* LetvMobileCDEGlue.m */,
+			);
+			path = CDEGlue;
+			sourceTree = "<group>";
+		};
+		E4D41F3228815AB600518908 /* AdvertiseGlue */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F3328815AB600518908 /* LetvMobileAdvertiseGlue.h */,
+				E4D41F3428815AB600518908 /* LetvMobileAdvertiseGlue.m */,
+			);
+			path = AdvertiseGlue;
+			sourceTree = "<group>";
+		};
+		E4D41F3528815AB600518908 /* CDNGlue */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F3628815AB600518908 /* LetvMobileCDNGlue.m */,
+				E4D41F3728815AB600518908 /* LetvMobileCDNGlue.h */,
+			);
+			path = CDNGlue;
+			sourceTree = "<group>";
+		};
+		E4D41F3828815AB600518908 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F3928815AB600518908 /* LetvMobileMediaLoaderContainer.h */,
+				E4D41F3A28815AB600518908 /* LetvMobileMediaLoaderContainer.m */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		E4D41F3B28815AB600518908 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F3C28815AB600518908 /* MediaLoadModuleTrait */,
+				E4D41F3E28815AB600518908 /* MediaLoaderModule */,
+				E4D41F4228815AB600518908 /* CDEModule */,
+				E4D41F4428815AB600518908 /* AuthModule */,
+				E4D41F4628815AB600518908 /* PlayRequestModule */,
+				E4D41F4828815AB600518908 /* AdvertiseModule */,
+				E4D41F4A28815AB600518908 /* LinkShellModule */,
+				E4D41F4C28815AB600518908 /* CDNModule */,
+				E4D41F4E28815AB600518908 /* NetworkDefaultParameters */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		E4D41F3C28815AB600518908 /* MediaLoadModuleTrait */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F3D28815AB600518908 /* LetvMobileMediaLoadModuleTrait.h */,
+			);
+			path = MediaLoadModuleTrait;
+			sourceTree = "<group>";
+		};
+		E4D41F3E28815AB600518908 /* MediaLoaderModule */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F3F28815AB600518908 /* LetvMobileMediaRequestTrait.h */,
+				E4D41F4028815AB600518908 /* LetvMobileMediaPlayTrait.h */,
+				E4D41F4128815AB600518908 /* LetvMobileMediaLoadTrait.h */,
+			);
+			path = MediaLoaderModule;
+			sourceTree = "<group>";
+		};
+		E4D41F4228815AB600518908 /* CDEModule */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F4328815AB600518908 /* LetvMobileCDEModuleTrait.h */,
+			);
+			path = CDEModule;
+			sourceTree = "<group>";
+		};
+		E4D41F4428815AB600518908 /* AuthModule */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F4528815AB600518908 /* LetvMobileAuthModuleTrait.h */,
+			);
+			path = AuthModule;
+			sourceTree = "<group>";
+		};
+		E4D41F4628815AB600518908 /* PlayRequestModule */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F4728815AB600518908 /* LetvMobilePlayRequestModuleTrait.h */,
+			);
+			path = PlayRequestModule;
+			sourceTree = "<group>";
+		};
+		E4D41F4828815AB600518908 /* AdvertiseModule */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F4928815AB600518908 /* LetvMobileAdvertiseModuleTrait.h */,
+			);
+			path = AdvertiseModule;
+			sourceTree = "<group>";
+		};
+		E4D41F4A28815AB600518908 /* LinkShellModule */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F4B28815AB600518908 /* LetvMobileLinkShellModuleTrait.h */,
+			);
+			path = LinkShellModule;
+			sourceTree = "<group>";
+		};
+		E4D41F4C28815AB600518908 /* CDNModule */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F4D28815AB600518908 /* LetvMobileCDNModuleTrait.h */,
+			);
+			path = CDNModule;
+			sourceTree = "<group>";
+		};
+		E4D41F4E28815AB600518908 /* NetworkDefaultParameters */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F4F28815AB600518908 /* LetvMobileMediaLoaderDefaultParametersTrait.h */,
+			);
+			path = NetworkDefaultParameters;
+			sourceTree = "<group>";
+		};
+		E4D41F5028815AB600518908 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F5128815AB600518908 /* LetvMobilePlayerKitFactory.m */,
+				E4D41F5228815AB600518908 /* LetvMobilePlayerKitFactory.h */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		E4D41F5328815AB600518908 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F5428815AB600518908 /* AuthService */,
+				E4D41F5728815AB600518908 /* CDEService */,
+				E4D41F5D28815AB600518908 /* CDNService */,
+				E4D41F6028815AB600518908 /* LinkshellService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E4D41F5428815AB600518908 /* AuthService */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F5528815AB600518908 /* LetvMobileAuthService.h */,
+				E4D41F5628815AB600518908 /* LetvMobileAuthService.m */,
+			);
+			path = AuthService;
+			sourceTree = "<group>";
+		};
+		E4D41F5728815AB600518908 /* CDEService */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F5828815AB600518908 /* LetvMobileCDEService.h */,
+				E4D41F5928815AB600518908 /* LetvMobileCDEOperation.h */,
+				E4D41F5A28815AB600518908 /* LetvMobileCDETaskTrait.h */,
+				E4D41F5B28815AB600518908 /* LetvMobileCDEService.m */,
+				E4D41F5C28815AB600518908 /* LetvMobileCDEOperation.m */,
+			);
+			path = CDEService;
+			sourceTree = "<group>";
+		};
+		E4D41F5D28815AB600518908 /* CDNService */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F5E28815AB600518908 /* LetvMobileCDNParseService.m */,
+				E4D41F5F28815AB600518908 /* LetvMobileCDNParseService.h */,
+			);
+			path = CDNService;
+			sourceTree = "<group>";
+		};
+		E4D41F6028815AB600518908 /* LinkshellService */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F6128815AB600518908 /* LetvMobileLinkShellService.m */,
+				E4D41F6228815AB600518908 /* LetvMobileLinkShellService.h */,
+			);
+			path = LinkshellService;
+			sourceTree = "<group>";
+		};
+		E4D41F6328815AB600518908 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E4D41F6428815AB600518908 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F6528815AB600518908 /* LetvMobileModels.h */,
+				E4D41F6628815AB600518908 /* LetvMobileModel.h */,
+				E4D41F6728815AB600518908 /* LetvMobileModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E4D41F6828815AB600518908 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F6928815AB600518908 /* LetvMobileLogger.h */,
+				E4D41F6A28815AB600518908 /* LetvMobileLogger.m */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		E4D41F6B28815AB600518908 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F6C28815AB600518908 /* TrackingService */,
+				E4D41F7528815AB600518908 /* Glue */,
+				E4D41F7828815AB600518908 /* LetvMobileServices.h */,
+				E4D41F7928815AB600518908 /* ReachabilityService */,
+				E4D41F7C28815AB600518908 /* TimestampService */,
+				E4D41F8528815AB600518908 /* Container */,
+				E4D41F8828815AB600518908 /* AppScheduleService */,
+				E4D41F8B28815AB600518908 /* Modules */,
+				E4D41F9528815AB600518908 /* Factory */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E4D41F6C28815AB600518908 /* TrackingService */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F6D28815AB600518908 /* LetvMobileLoginTracker.h */,
+				E4D41F6E28815AB600518908 /* LetvMobileTrackingService.h */,
+				E4D41F6F28815AB600518908 /* LetvMobilePlayTracker.m */,
+				E4D41F7028815AB600518908 /* FixedTrackingParametersHelper.h */,
+				E4D41F7128815AB600518908 /* LetvMobileLoginTracker.m */,
+				E4D41F7228815AB600518908 /* LetvMobilePlayTracker.h */,
+				E4D41F7328815AB600518908 /* LetvMobileTrackingService.m */,
+				E4D41F7428815AB600518908 /* FixedTrackingParametersHelper.m */,
+			);
+			path = TrackingService;
+			sourceTree = "<group>";
+		};
+		E4D41F7528815AB600518908 /* Glue */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F7628815AB600518908 /* LetvMobileServicesGlue.h */,
+				E4D41F7728815AB600518908 /* LetvMobileServicesGlue.m */,
+			);
+			path = Glue;
+			sourceTree = "<group>";
+		};
+		E4D41F7928815AB600518908 /* ReachabilityService */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F7A28815AB600518908 /* LetvMobileReachabilityService.m */,
+				E4D41F7B28815AB600518908 /* LetvMobileReachabilityService.h */,
+			);
+			path = ReachabilityService;
+			sourceTree = "<group>";
+		};
+		E4D41F7C28815AB600518908 /* TimestampService */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F7D28815AB600518908 /* LetvTimestampClient.m */,
+				E4D41F7E28815AB600518908 /* LetvTimestampModel.m */,
+				E4D41F7F28815AB600518908 /* LetvCPUTickCountHelper.m */,
+				E4D41F8028815AB600518908 /* LetvMobileTimestampService.h */,
+				E4D41F8128815AB600518908 /* LetvTimestampModel.h */,
+				E4D41F8228815AB600518908 /* LetvTimestampClient.h */,
+				E4D41F8328815AB600518908 /* LetvMobileTimestampService.m */,
+				E4D41F8428815AB600518908 /* LetvCPUTickCountHelper.h */,
+			);
+			path = TimestampService;
+			sourceTree = "<group>";
+		};
+		E4D41F8528815AB600518908 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F8628815AB600518908 /* LetvMobileServicesContainer.h */,
+				E4D41F8728815AB600518908 /* LetvMobileServicesContainer.m */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		E4D41F8828815AB600518908 /* AppScheduleService */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F8928815AB600518908 /* LetvMobileAppScheduleService.h */,
+				E4D41F8A28815AB600518908 /* LetvMobileAppScheduleService.m */,
+			);
+			path = AppScheduleService;
+			sourceTree = "<group>";
+		};
+		E4D41F8B28815AB600518908 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F8C28815AB600518908 /* LetvMobilePlayTrackingTrait.h */,
+				E4D41F8D28815AB600518908 /* LetvMobileTrackingServiceTrait.h */,
+				E4D41F8E28815AB600518908 /* LetvMobileLoginTrackingTrait.h */,
+				E4D41F8F28815AB600518908 /* LetvMobileTimestampServiceTrait.h */,
+				E4D41F9028815AB600518908 /* LetvMobileAppScheduleServiceTrait.h */,
+				E4D41F9128815AB600518908 /* LetvMobileTrackingTrait.h */,
+				E4D41F9228815AB600518908 /* LetvMobileReachabilityServiceTrait.h */,
+				E4D41F9328815AB600518908 /* LetvMobileStartupTrait.h */,
+				E4D41F9428815AB600518908 /* LetvMobileCDEInfoTrait.h */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		E4D41F9528815AB600518908 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				E4D41F9628815AB600518908 /* LetvMobileServicesFactory.h */,
+				E4D41F9728815AB600518908 /* LetvMobileServicesFactory.m */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		E4D4202428815AF500518908 /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				E47F830D28854A4100989B62 /* libzlib.a */,
+				E4D4203428815B6300518908 /* CdeDownloadItem.h */,
+				E4D4203728815B6300518908 /* CdeDownloads.h */,
+				E4D4203328815B6300518908 /* CdeService.h */,
+				E4D4203628815B6300518908 /* CdeUrl.h */,
+				E4D4203528815B6300518908 /* LetvCDE.h */,
+				E4D4202528815AF500518908 /* libcrypto.a */,
+				E4D4202628815AF500518908 /* libglog.a */,
+				E4D4202728815AF500518908 /* libssl.a */,
+				E4D4202928815AF500518908 /* libcurl.a */,
+				E4D4202A28815AF500518908 /* libboost.a */,
+				E4D4202B28815AF500518908 /* libcde-sdk.a */,
+			);
+			path = 3rd;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E4D41EBA288156DF00518908 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D41FE328815AB600518908 /* LetvMobileAuthModuleTrait.h in Headers */,
+				E4D41FD128815AB600518908 /* IMobilePlayerCore.h in Headers */,
+				E4D41FEB28815AB600518908 /* LetvMobileAuthService.h in Headers */,
+				E4D4203928815B6300518908 /* CdeDownloadItem.h in Headers */,
+				E4D4201928815AB600518908 /* LetvMobileTrackingTrait.h in Headers */,
+				E4D4200B28815AB600518908 /* LetvMobileTimestampService.h in Headers */,
+				E4D41F9F28815AB600518908 /* RxAFNetworking.h in Headers */,
+				E4D41FAE28815AB600518908 /* NSError+Letv.h in Headers */,
+				E4D41FB228815AB600518908 /* LetvMobileCancelTrait.h in Headers */,
+				E4D41FA728815AB600518908 /* NSString+LetvHttpExtensions.h in Headers */,
+				E4D41FD528815AB600518908 /* LetvMobileCDEGlue.h in Headers */,
+				E4D41FEF28815AB600518908 /* LetvMobileCDETaskTrait.h in Headers */,
+				E4D41FDB28815AB600518908 /* LetvMobileCDNGlue.h in Headers */,
+				E4D41FCB28815AB600518908 /* LetvMobileNetworkAPIClient.h in Headers */,
+				E4D41FDE28815AB600518908 /* LetvMobileMediaLoadModuleTrait.h in Headers */,
+				E4D4200728815AB600518908 /* LetvMobileReachabilityService.h in Headers */,
+				E4D41FF528815AB600518908 /* LetvMobileLinkShellService.h in Headers */,
+				E4D41FFC28815AB600518908 /* LetvMobileTrackingService.h in Headers */,
+				E47F830C288508AC00989B62 /* LetvPlayerHeader.h in Headers */,
+				E4D41FC528815AB600518908 /* LetvHttpServerUniversalParametersHelper.h in Headers */,
+				E4D41FD628815AB600518908 /* LetvMobileCDEClient.h in Headers */,
+				E4D41FA528815AB600518908 /* LetvSingleton.h in Headers */,
+				E4D4200528815AB600518908 /* LetvMobileServices.h in Headers */,
+				E4D41F9D28815AB600518908 /* AFHTTPSessionManager+Rx.h in Headers */,
+				E4D4201628815AB600518908 /* LetvMobileLoginTrackingTrait.h in Headers */,
+				E4D41FA428815AB600518908 /* LetvMobileDeployment.h in Headers */,
+				E4D41FE428815AB600518908 /* LetvMobilePlayRequestModuleTrait.h in Headers */,
+				E4D4203B28815B6300518908 /* CdeUrl.h in Headers */,
+				E4D4201F28815AB600518908 /* LetvPlayerManager_Private.h in Headers */,
+				E4D4201428815AB600518908 /* LetvMobilePlayTrackingTrait.h in Headers */,
+				E4D4201D28815AB600518908 /* LetvMobileServicesFactory.h in Headers */,
+				E4D41FE528815AB600518908 /* LetvMobileAdvertiseModuleTrait.h in Headers */,
+				E4D41FC028815AB600518908 /* RACSignal+LetvMapModel.h in Headers */,
+				E4D41FAA28815AB600518908 /* NSData+LetvMD5.h in Headers */,
+				E4D41FB928815AB600518908 /* LetvHttpSessionManager.h in Headers */,
+				E4D41FE128815AB600518908 /* LetvMobileMediaLoadTrait.h in Headers */,
+				E4D41ED0288156DF00518908 /* LetvPlayer.h in Headers */,
+				E4D4201028815AB600518908 /* LetvMobileServicesContainer.h in Headers */,
+				E4D41FA328815AB600518908 /* LetvMobileContainer.h in Headers */,
+				E4D41FDF28815AB600518908 /* LetvMobileMediaRequestTrait.h in Headers */,
+				E4D41FB328815AB600518908 /* LetvMobileCore.h in Headers */,
+				E4D4200028815AB600518908 /* LetvMobilePlayTracker.h in Headers */,
+				E4D41FC428815AB600518908 /* LetvHttpServerAPISignatureHelper.h in Headers */,
+				E4D4202028815AB600518908 /* LetvPlayerManager.h in Headers */,
+				E4D41FC128815AB600518908 /* LetvMobileHTTPClientTrait.h in Headers */,
+				E4D41FF928815AB600518908 /* LetvMobileLogger.h in Headers */,
+				E4D4201B28815AB600518908 /* LetvMobileStartupTrait.h in Headers */,
+				E4D41FE228815AB600518908 /* LetvMobileCDEModuleTrait.h in Headers */,
+				E4D41FF728815AB600518908 /* LetvMobileModel.h in Headers */,
+				E4D41FBE28815AB600518908 /* LetvMobileReachability.h in Headers */,
+				E4D41FAD28815AB600518908 /* NSArray+LetvFP.h in Headers */,
+				E4D41FFE28815AB600518908 /* FixedTrackingParametersHelper.h in Headers */,
+				E4D41FB728815AB600518908 /* LetvHttpRequestSerializer.h in Headers */,
+				E4D4201C28815AB600518908 /* LetvMobileCDEInfoTrait.h in Headers */,
+				E4D4201528815AB600518908 /* LetvMobileTrackingServiceTrait.h in Headers */,
+				E4D41FBB28815AB600518908 /* LetvMobileNetworkingContainer.h in Headers */,
+				E4D4203C28815B6300518908 /* CdeDownloads.h in Headers */,
+				E4D41FE628815AB600518908 /* LetvMobileLinkShellModuleTrait.h in Headers */,
+				E4D41FD228815AB600518908 /* LetvMobileLinkShellGlue.h in Headers */,
+				E4D41FE728815AB600518908 /* LetvMobileCDNModuleTrait.h in Headers */,
+				E4D41FA028815AB600518908 /* NSObject+LetvContainer.h in Headers */,
+				E4D41FD828815AB600518908 /* LetvMobileAdvertiseGlue.h in Headers */,
+				E4D41FDC28815AB600518908 /* LetvMobileMediaLoaderContainer.h in Headers */,
+				E4D4201728815AB600518908 /* LetvMobileTimestampServiceTrait.h in Headers */,
+				E4D41FEA28815AB600518908 /* LetvMobilePlayerKitFactory.h in Headers */,
+				E4D41FF328815AB600518908 /* LetvMobileCDNParseService.h in Headers */,
+				E4D41FEE28815AB600518908 /* LetvMobileCDEOperation.h in Headers */,
+				E4D41FED28815AB600518908 /* LetvMobileCDEService.h in Headers */,
+				E4D4200328815AB600518908 /* LetvMobileServicesGlue.h in Headers */,
+				E4D4200D28815AB600518908 /* LetvTimestampClient.h in Headers */,
+				E4D4200F28815AB600518908 /* LetvCPUTickCountHelper.h in Headers */,
+				E4D4201A28815AB600518908 /* LetvMobileReachabilityServiceTrait.h in Headers */,
+				E4D41FB428815AB600518908 /* AFHTTPSessionManager+Letv.h in Headers */,
+				E4D4201828815AB600518908 /* LetvMobileAppScheduleServiceTrait.h in Headers */,
+				E4D41FB028815AB600518908 /* RACSignal+LetvMapError.h in Headers */,
+				E4D41FE028815AB600518908 /* LetvMobileMediaPlayTrait.h in Headers */,
+				E4D41FF628815AB600518908 /* LetvMobileModels.h in Headers */,
+				E4D41FA928815AB600518908 /* NSString+LetvMD5.h in Headers */,
+				E4D4201228815AB600518908 /* LetvMobileAppScheduleService.h in Headers */,
+				E4D41FC728815AB600518908 /* LetvMobileNetworkingFactory.h in Headers */,
+				E4D41FCD28815AB600518908 /* LetvMobilePlayAPIModel.h in Headers */,
+				E4D41FCF28815AB600518908 /* LetvMobileMediaLoader.h in Headers */,
+				E4D41FBC28815AB600518908 /* LetvMobileNetworking.h in Headers */,
+				E4D41FC228815AB600518908 /* LetvMobileHTTPDefaultGETParametersTrait.h in Headers */,
+				E4D41FE828815AB600518908 /* LetvMobileMediaLoaderDefaultParametersTrait.h in Headers */,
+				E4D41FFB28815AB600518908 /* LetvMobileLoginTracker.h in Headers */,
+				E4D4200C28815AB600518908 /* LetvTimestampModel.h in Headers */,
+				E4D4202328815AB600518908 /* LetvPlayerSdkController.h in Headers */,
+				E4D41FC928815AB600518908 /* LetvMobileVideoMergeClient.h in Headers */,
+				E4D4203A28815B6300518908 /* LetvCDE.h in Headers */,
+				E4D4203828815B6300518908 /* CdeService.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E47F82E528816A0C00989B62 /* LetvPlayerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E47F82FC28816A0D00989B62 /* Build configuration list for PBXNativeTarget "LetvPlayerDemo" */;
+			buildPhases = (
+				74A37EBE774F1AA7E576239D /* [CP] Check Pods Manifest.lock */,
+				E47F82E228816A0C00989B62 /* Sources */,
+				E47F82E328816A0C00989B62 /* Frameworks */,
+				E47F82E428816A0C00989B62 /* Resources */,
+				E47F830328816ABE00989B62 /* Embed Frameworks */,
+				A08FC9CC7A8E76D2E8D79CEC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E47F830228816ABE00989B62 /* PBXTargetDependency */,
+			);
+			name = LetvPlayerDemo;
+			productName = LetvPlayerDemo;
+			productReference = E47F82E628816A0C00989B62 /* LetvPlayerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E4D41EBE288156DF00518908 /* LetvPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4D41ED3288156DF00518908 /* Build configuration list for PBXNativeTarget "LetvPlayer" */;
+			buildPhases = (
+				54964AAFC6EB6E684020DD87 /* [CP] Check Pods Manifest.lock */,
+				E4D41EBA288156DF00518908 /* Headers */,
+				E4D41EBB288156DF00518908 /* Sources */,
+				E4D41EBC288156DF00518908 /* Frameworks */,
+				E4D41EBD288156DF00518908 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LetvPlayer;
+			productName = LetvPlayer;
+			productReference = E4D41EBF288156DF00518908 /* LetvPlayer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E4D41EC8288156DF00518908 /* LetvPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4D41ED6288156DF00518908 /* Build configuration list for PBXNativeTarget "LetvPlayerTests" */;
+			buildPhases = (
+				E4D41EC5288156DF00518908 /* Sources */,
+				E4D41EC6288156DF00518908 /* Frameworks */,
+				E4D41EC7288156DF00518908 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4D41ECC288156DF00518908 /* PBXTargetDependency */,
+			);
+			name = LetvPlayerTests;
+			productName = LetvPlayerTests;
+			productReference = E4D41EC9288156DF00518908 /* LetvPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4D41EB6288156DF00518908 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					E47F82E528816A0C00989B62 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					E4D41EBE288156DF00518908 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					E4D41EC8288156DF00518908 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = E4D41EB9288156DF00518908 /* Build configuration list for PBXProject "LetvPlayer" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E4D41EB5288156DF00518908;
+			productRefGroup = E4D41EC0288156DF00518908 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4D41EBE288156DF00518908 /* LetvPlayer */,
+				E4D41EC8288156DF00518908 /* LetvPlayerTests */,
+				E47F82E528816A0C00989B62 /* LetvPlayerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E47F82E428816A0C00989B62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E47F82F828816A0D00989B62 /* LaunchScreen.storyboard in Resources */,
+				E47F82F528816A0D00989B62 /* Assets.xcassets in Resources */,
+				E47F82F328816A0C00989B62 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4D41EBD288156DF00518908 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4D41EC7288156DF00518908 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54964AAFC6EB6E684020DD87 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LetvPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74A37EBE774F1AA7E576239D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LetvPlayerDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A08FC9CC7A8E76D2E8D79CEC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LetvPlayerDemo/Pods-LetvPlayerDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LetvPlayerDemo/Pods-LetvPlayerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E47F82E228816A0C00989B62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E418FC10288902B200A3721A /* VideoPlayerView.m in Sources */,
+				E47F82F028816A0C00989B62 /* ViewController.m in Sources */,
+				E47F82EA28816A0C00989B62 /* AppDelegate.m in Sources */,
+				E47F82FB28816A0D00989B62 /* main.m in Sources */,
+				E47F82ED28816A0C00989B62 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4D41EBB288156DF00518908 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D41FD728815AB600518908 /* LetvMobileCDEGlue.m in Sources */,
+				E4D41FF028815AB600518908 /* LetvMobileCDEService.m in Sources */,
+				E4D41FA228815AB600518908 /* NSObject+LetvContainer.m in Sources */,
+				E4D41FB128815AB600518908 /* RACSignal+LetvMapError.m in Sources */,
+				E4D41FF828815AB600518908 /* LetvMobileModel.m in Sources */,
+				E4D41FE928815AB600518908 /* LetvMobilePlayerKitFactory.m in Sources */,
+				E4D41EC4288156DF00518908 /* LetvPlayer.docc in Sources */,
+				E4D41FD428815AB600518908 /* LetvMobileCDEClient.m in Sources */,
+				E4D41FF128815AB600518908 /* LetvMobileCDEOperation.m in Sources */,
+				E4D41FD928815AB600518908 /* LetvMobileAdvertiseGlue.m in Sources */,
+				E4D4200928815AB600518908 /* LetvTimestampModel.m in Sources */,
+				E4D41FAB28815AB600518908 /* NSData+LetvMD5.m in Sources */,
+				E4D41FDA28815AB600518908 /* LetvMobileCDNGlue.m in Sources */,
+				E4D41FC328815AB600518908 /* LetvHttpServerUniversalParametersHelper.m in Sources */,
+				E4D4200228815AB600518908 /* FixedTrackingParametersHelper.m in Sources */,
+				E4D41FFD28815AB600518908 /* LetvMobilePlayTracker.m in Sources */,
+				E4D4200A28815AB600518908 /* LetvCPUTickCountHelper.m in Sources */,
+				E4D41FCE28815AB600518908 /* LetvMobileNetworkAPIClient.m in Sources */,
+				E4D4201128815AB600518908 /* LetvMobileServicesContainer.m in Sources */,
+				E4D41FF428815AB600518908 /* LetvMobileLinkShellService.m in Sources */,
+				E4D41FBD28815AB600518908 /* LetvMobileReachability.m in Sources */,
+				E4D41F9E28815AB600518908 /* AFHTTPSessionManager+Rx.m in Sources */,
+				E4D4202228815AB600518908 /* LetvPlayerSdkController.m in Sources */,
+				E4D4202128815AB600518908 /* LetvPlayerManager.m in Sources */,
+				E4D4200428815AB600518908 /* LetvMobileServicesGlue.m in Sources */,
+				E4D41FC628815AB600518908 /* LetvHttpServerAPISignatureHelper.m in Sources */,
+				E4D41FDD28815AB600518908 /* LetvMobileMediaLoaderContainer.m in Sources */,
+				E4D4201E28815AB600518908 /* LetvMobileServicesFactory.m in Sources */,
+				E4D41FB528815AB600518908 /* LetvHttpRequestSerializer.m in Sources */,
+				E4D41FD328815AB600518908 /* LetvMobileLinkShellGlue.m in Sources */,
+				E4D41FA128815AB600518908 /* LetvMobileContainer.m in Sources */,
+				E4D41FF228815AB600518908 /* LetvMobileCDNParseService.m in Sources */,
+				E4D41FB828815AB600518908 /* AFHTTPSessionManager+Letv.m in Sources */,
+				E4D41FCA28815AB600518908 /* LetvMobilePlayAPIModel.m in Sources */,
+				E4D41FD028815AB600518908 /* LetvMobileMediaLoader.m in Sources */,
+				E4D41FBA28815AB600518908 /* LetvMobileNetworkingContainer.m in Sources */,
+				E4D41FAF28815AB600518908 /* NSError+Letv.m in Sources */,
+				E4D41FCC28815AB600518908 /* LetvMobileVideoMergeClient.m in Sources */,
+				E4D41FA828815AB600518908 /* NSString+LetvHttpExtensions.m in Sources */,
+				E4D4201328815AB600518908 /* LetvMobileAppScheduleService.m in Sources */,
+				E4D41FBF28815AB600518908 /* RACSignal+LetvMapModel.m in Sources */,
+				E4D41FFF28815AB600518908 /* LetvMobileLoginTracker.m in Sources */,
+				E4D41FC828815AB600518908 /* LetvMobileNetworkingFactory.m in Sources */,
+				E4D41FB628815AB600518908 /* LetvHttpSessionManager.m in Sources */,
+				E4D4200E28815AB600518908 /* LetvMobileTimestampService.m in Sources */,
+				E4D4200628815AB600518908 /* LetvMobileReachabilityService.m in Sources */,
+				E4D4200828815AB600518908 /* LetvTimestampClient.m in Sources */,
+				E4D41FA628815AB600518908 /* NSString+LetvMD5.m in Sources */,
+				E4D41FFA28815AB600518908 /* LetvMobileLogger.m in Sources */,
+				E4D4200128815AB600518908 /* LetvMobileTrackingService.m in Sources */,
+				E4D41FAC28815AB600518908 /* NSArray+LetvFP.m in Sources */,
+				E4D41FEC28815AB600518908 /* LetvMobileAuthService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4D41EC5288156DF00518908 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D41ECF288156DF00518908 /* LetvPlayerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E47F830228816ABE00989B62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4D41EBE288156DF00518908 /* LetvPlayer */;
+			targetProxy = E47F830128816ABE00989B62 /* PBXContainerItemProxy */;
+		};
+		E4D41ECC288156DF00518908 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4D41EBE288156DF00518908 /* LetvPlayer */;
+			targetProxy = E4D41ECB288156DF00518908 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E47F82F128816A0C00989B62 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E47F82F228816A0C00989B62 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E47F82F628816A0D00989B62 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E47F82F728816A0D00989B62 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E47F82FD28816A0D00989B62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CF7AEEF95809B4F8EDC0125 /* Pods-LetvPlayerDemo.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NK22HY3LBA;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = i386;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LetvPlayerDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/3rd",
+				);
+				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.letv.sdk.LetvPlayerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Debug;
+		};
+		E47F82FE28816A0D00989B62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15D89D32B1189D8F311D6E67 /* Pods-LetvPlayerDemo.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NK22HY3LBA;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = i386;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LetvPlayerDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/3rd",
+				);
+				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.letv.sdk.LetvPlayerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Release;
+		};
+		E4D41ED1288156DF00518908 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E4D41ED2288156DF00518908 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E4D41ED4288156DF00518908 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AB2D3CE8E428EA54C2B0588 /* Pods-LetvPlayer.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = NK22HY3LBA;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/3rd",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.letv.sdk.LetvPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E4D41ED5288156DF00518908 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76E2557E2908107EFA433552 /* Pods-LetvPlayer.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = NK22HY3LBA;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/3rd",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.letv.sdk.LetvPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E4D41ED7288156DF00518908 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NK22HY3LBA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.letv.sdk.LetvPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E4D41ED8288156DF00518908 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NK22HY3LBA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.letv.sdk.LetvPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E47F82FC28816A0D00989B62 /* Build configuration list for PBXNativeTarget "LetvPlayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E47F82FD28816A0D00989B62 /* Debug */,
+				E47F82FE28816A0D00989B62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4D41EB9288156DF00518908 /* Build configuration list for PBXProject "LetvPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4D41ED1288156DF00518908 /* Debug */,
+				E4D41ED2288156DF00518908 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4D41ED3288156DF00518908 /* Build configuration list for PBXNativeTarget "LetvPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4D41ED4288156DF00518908 /* Debug */,
+				E4D41ED5288156DF00518908 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4D41ED6288156DF00518908 /* Build configuration list for PBXNativeTarget "LetvPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4D41ED7288156DF00518908 /* Debug */,
+				E4D41ED8288156DF00518908 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4D41EB6288156DF00518908 /* Project object */;
+}
