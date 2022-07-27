@@ -39,6 +39,11 @@ SDK使用
 声明 LetvPlayerSdkController *player 对象
 
 ```
+@interface xxxxxxxxxxx ()<LetvPlayerSdkControllerProtocol>
+@property (nonatomic, strong) LetvPlayerSdkController *player;
+@end
+
+
 self.player = [[LetvPlayerSdkController alloc] initWithVid:@"66901427" p2p:YES streamCode:LetvMobilePlayerStreamCodeSD];
 self.player.delegate = self;
 [self.player startProcess];
