@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "LetvPlayer"
-  spec.version      = "1.0.2"
+  spec.version      = "1.0.3"
   spec.summary      = "乐视视频播放SDK."
 
   # This description is used to generate tags and improve search results.
@@ -104,7 +104,8 @@ Pod::Spec.new do |spec|
 
   spec.public_header_files = "LetvPlayer/LetvPlayer.h","LetvPlayer/LetvPlayerManager.h","LetvPlayer/LetvPlayerSdkController.h"
   spec.pod_target_xcconfig = {
-    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64",
+    'VALID_ARCHS[sdk=iphonesimulator*]' => ''
   }
   spec.user_target_xcconfig = {
     "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
