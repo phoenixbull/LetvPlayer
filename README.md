@@ -3,6 +3,7 @@
 安装方式
 ------------
 use_frameworks!
+
 pod 'LetvPlayer', :git => 'git@github.com:phoenixbull/LetvPlayer.git'
 
 项目配置
